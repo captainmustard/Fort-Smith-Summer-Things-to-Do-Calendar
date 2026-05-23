@@ -253,6 +253,51 @@ h1 em {
   color: var(--ink-soft);
   margin-top: 4px;
 }
+/* ---- Add-to-calendar button ---- */
+.add-cal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1.5px solid var(--line);
+  background: var(--cream);
+  color: var(--ink-soft);
+  font-size: .82rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .12s, background .12s, border-color .12s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event:hover .add-cal,
+.event:focus-within .add-cal {
+  opacity: 1;
+}
+.add-cal:hover {
+  background: var(--card);
+  border-color: var(--ink-soft);
+}
+/* always show on touch devices (no hover) */
+@media (hover: none) {
+  .add-cal { opacity: .7; }
+}
+
+.event .src-link {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-top: 6px;
+}
+.event .src-link:hover {
+  color: var(--library);
+}
+
 .event.is-closed {
   background: repeating-linear-gradient(45deg, #fbeaec, #fbeaec 8px, #f6dde0 8px, #f6dde0 16px);
   border-left-color: var(--closed);

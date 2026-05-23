@@ -10,6 +10,7 @@
  *   cost   – "free" or "paid"
  *   loc    – location / branch name
  *   note   – extra details
+ *   url    – (optional) link to more info; overrides the default source URL
  *   closed – true if the venue is closed that day
  */
 const EVENTS = [
