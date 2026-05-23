@@ -12,6 +12,8 @@
   --parrot: #0E9C9C;
   --museum: #7B4FA0;
   --community: #C13B7A;
+  --marshals: #6B5B3E;
+  --historic: #8B6914;
   --closed: #B23A48;
   --shadow: 0 1px 2px rgba(42,32,23,.06), 0 8px 28px -12px rgba(42,32,23,.25);
 }
@@ -131,6 +133,8 @@ h1 em {
 .chip.parrot[aria-pressed="true"] { background: var(--parrot); }
 .chip.museum[aria-pressed="true"] { background: var(--museum); }
 .chip.community[aria-pressed="true"] { background: var(--community); }
+.chip.marshals[aria-pressed="true"] { background: var(--marshals); }
+.chip.historic[aria-pressed="true"] { background: var(--historic); }
 .chip.freeonly[aria-pressed="true"] { background: var(--nature); }
 
 .chip .dot.library { color: var(--library); }
@@ -140,6 +144,8 @@ h1 em {
 .chip .dot.parrot { color: var(--parrot); }
 .chip .dot.museum { color: var(--museum); }
 .chip .dot.community { color: var(--community); }
+.chip .dot.marshals { color: var(--marshals); }
+.chip .dot.historic { color: var(--historic); }
 
 /* ---- Calendar layout ---- */
 .month {

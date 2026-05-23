@@ -11,6 +11,8 @@ const SRC_NAME = {
   nature:    "Nature Center",
   parrot:    "Parrot Island",
   community: "Community",
+  marshals:  "Marshals Museum",
+  historic:  "Historic Site",
 };
 
 const MONTHS = [
